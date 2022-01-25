@@ -12,6 +12,10 @@
     <!--Este título irá aparecer na aba do navegador ou browser-->
     <!--Dentro da tag <style> que nós iremos trabalhar com o estilo da página html-->
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0px;
@@ -56,6 +60,28 @@
         img {
             width: 100%;
         }
+        
+        .row {
+            padding: 0 20px;
+            display: table;
+        }
+        
+        section {
+            float: left;
+            width: 75%;
+        }
+        
+        aside {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -74,7 +100,7 @@
     <div class="row">
         <section>
 
-            <article>
+            <article class="card">
                 <h2>Desenvolvimento de páginas web</h2>
                 <h5>Desenvolva seus sites com HTML5, CSS3 e JavaScript</h5>
                 <img src="img/html-css-javascript.png" alt="Capa do curso de desenvolvimento páginas web">
@@ -82,7 +108,7 @@
                 <p>"Nesse curso vamos aprender a desenvolver páginas web utilizndo HTML5, CSS3 e JavaScript. Durante as aulas vamos desenvolver várias páginas web e também aprenderemos a publicar nosso site na web."</p>
 
             </article>
-            <article>
+            <article class="card">
                 <h2>Desenvolvimento de Aplicativos</h2>
                 <h5>Desenvolvimento de Aplicativos Android</h5>
                 <img src="img/app-inventor.png" alt="Capa do curso app-inventor">
